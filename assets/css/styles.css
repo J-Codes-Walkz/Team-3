@@ -1,0 +1,6 @@
+body{background-color: #1c1d21;}
+h2{color:white; text-align: center;}
+table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center;}
+.table-header{display:table-caption}
+.row-a{background-color: rgba(42, 70, 250, 1);}
+.row-b{background-color: #2aaefa;}
