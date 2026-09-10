@@ -7,6 +7,9 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/8e98b6be0c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,6 +17,64 @@
 
 
     <section id="events-section">
+        <!--filter options-->
+        <!--Location selection-->
+        <div class="filter-options">
+            <h2>Filter Options</h2>
+            <span class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Location
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"><input type="checkbox"> Birmingham</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> London</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Manchester</a></li>
+                </ul>
+            </span>
+            <!--day selection-->
+            <span class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Day
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"><input type="checkbox"> Monday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Tuesday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Wednesday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Thursday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Friday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Saturday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Sunday</a></li>
+                </ul>
+            </span>
+            <!--activity selection-->
+            <span class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Activity
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"><input type="checkbox"> Swimming</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Running</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Dancing</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Yoga</a></li>
+                </ul>
+            </span>
+            <!--time selection-->
+            <span class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Time
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"><input type="checkbox"> Morning</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Afternoon</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox"> Evening</a></li>
+                </ul>
+            </span>
+        </div>
+
         <!--table of mondays events-->
         <div id="monday">
             <h2>Monday's Events</h2>
@@ -26,8 +87,8 @@
                     <th>Find out more</th>
                 </tr>
                 <!--event data-->
-                <tr class="row-b">
-                    <td>Swimming club</td>
+                <tr class="row-b swimming birmingham evening">
+                    <td><i class="fa-solid fa-person-swimming"></i>Swimming club</td>
                     <td>Birmingham, Sandwell</td>
                     <td>16:00</td>
                     <td>
@@ -36,8 +97,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-a">
-                    <td>5 - 10 km</td>
+                <tr class="row-a running birmingham evening">
+                    <td><i class="fa-solid fa-person-running"></i>5 - 10 km run</td>
                     <td>Birmingham, Chamberlain Square</td>
                     <td>18:30</td>
                     <td>
@@ -48,8 +109,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-b">
-                    <td>6 km loop</td>
+                <tr class="row-b running london evening">
+                    <td><i class="fa-solid fa-person-running"></i>6 km loop</td>
                     <td>London, Hyde Park</td>
                     <td>19:00</td>
                     <td>
@@ -60,8 +121,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-a">
-                    <td>Vinyasa Flow Yoga</td>
+                <tr class="row-a yoga manchester evening">
+                    <td><i class="fa-solid fa-yin-yang"></i>Vinyasa Flow Yoga</td>
                     <td>Manchester, Levenshulme</td>
                     <td>19:15</td>
                     <td>
@@ -88,8 +149,8 @@
                     <th>Find out more</th>
                 </tr>
                 <!--event data-->
-                <tr class="row-b">
-                    <td>Salsa</td>
+                <tr class="row-b dance london morning">
+                    <td><i class="fa-solid fa-music"></i>Salsa</td>
                     <td>London, Fulham</td>
                     <td>09:00</td>
                     <td>
@@ -99,8 +160,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-a">
-                    <td>Zumba Gold</td>
+                <tr class="row-a dance birmingham morning">
+                    <td><i class="fa-solid fa-music"></i>Zumba Gold</td>
                     <td>Birmingham, Solihull</td>
                     <td>11:30</td>
                     <td>
@@ -110,8 +171,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-b">
-                    <td>Track Run</td>
+                <tr class="row-b running london evening">
+                    <td><i class="fa-solid fa-person-running"></i>Track Run</td>
                     <td>London, Chelsea</td>
                     <td>19:00</td>
                     <td>
@@ -120,8 +181,8 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-a">
-                    <td>Swimming club</td>
+                <tr class="row-a swimming birmingham evening">
+                    <td><i class="fa-solid fa-person-swimming"></i>Swimming club</td>
                     <td>Birmingham, University of Birmingham</td>
                     <td>19:45</td>
                     <td><a target="_blank" href="https://birmingham-marlins.co.uk/calendar">
@@ -336,7 +397,13 @@
 
 
     </section>
+    <!--javascript link-->
     <script src="assets/JavaScript/script.js"></script>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 body{background-color: #1c1d21;}
 h2{color:white; text-align: center;}
 
+.filter-options{justify-content: center;}
+.dropdown{margin: 10px;}
 
 /*Table styling*/
 table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center;}
