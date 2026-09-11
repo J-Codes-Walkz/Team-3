@@ -12,18 +12,26 @@ var saturdayEvents = document.getElementById("saturday");
 var sundayEvents = document.getElementById("sunday");
 
 //order event timtable based on current day to show todays events first
+//0 = sunday, 1 = monday, 2 = tuesday, 3 = wednesday, 4 = thursday, 5 = friday, 6 = saturday
+//sunday
 if (day === 0) 
      mondayEvents.style.order = 1, tuesdayEvents.style.order = 2, wednesdayEvents.style.order = 3, thursdayEvents.style.order = 4, fridayEvents.style.order = 5, saturdayEvents.style.order = 6, sundayEvents.style.order = 0; 
+//monday
 else if (day === 1) 
      mondayEvents.style.order = 0, tuesdayEvents.style.order = 1, wednesdayEvents.style.order = 2, thursdayEvents.style.order = 3, fridayEvents.style.order = 4, saturdayEvents.style.order = 5, sundayEvents.style.order = 6; 
+//tuesday
 else if (day === 2) 
      mondayEvents.style.order = 6, tuesdayEvents.style.order = 0, wednesdayEvents.style.order = 1, thursdayEvents.style.order = 2, fridayEvents.style.order = 3, saturdayEvents.style.order = 4, sundayEvents.style.order = 5; 
+//wednesday
 else if (day === 3) 
      mondayEvents.style.order = 5, tuesdayEvents.style.order = 6, wednesdayEvents.style.order = 0, thursdayEvents.style.order = 1, fridayEvents.style.order = 2, saturdayEvents.style.order = 3, sundayEvents.style.order = 4;
+//thursday
 else if (day === 4) 
      mondayEvents.style.order = 4, tuesdayEvents.style.order = 5, wednesdayEvents.style.order = 6, thursdayEvents.style.order = 0, fridayEvents.style.order = 1, saturdayEvents.style.order = 2, sundayEvents.style.order = 3;
+//friday
 else if (day === 5) 
      mondayEvents.style.order = 3, tuesdayEvents.style.order = 4, wednesdayEvents.style.order = 5, thursdayEvents.style.order = 6, fridayEvents.style.order = 0, saturdayEvents.style.order = 1, sundayEvents.style.order = 2;
+//saturday
 else if (day === 6) 
      mondayEvents.style.order = 2, tuesdayEvents.style.order = 3, wednesdayEvents.style.order = 4, thursdayEvents.style.order = 5, fridayEvents.style.order = 6, saturdayEvents.style.order = 0, sundayEvents.style.order = 1;
 else {}
@@ -37,42 +45,49 @@ var checkFriday = document.getElementById("friday-checkbox");
 var checkSaturday = document.getElementById("saturday-checkbox");
 var checkSunday = document.getElementById("sunday-checkbox");
 //add event listeners to checkboxes to show or hide days based on user selection
+//monday event listener
 checkMonday.addEventListener("change", function() {
     if (checkMonday.checked) {
         mondayEvents.style.display = "block";}
     else {
         mondayEvents.style.display = "none";}
 });
+//tuesday event listener
 checkTuesday.addEventListener("change", function() {
     if (checkTuesday.checked) {
         tuesdayEvents.style.display = "block";}
     else {
         tuesdayEvents.style.display = "none";}
 });
+//wednesday event listener
 checkWednesday.addEventListener("change", function() {
     if (checkWednesday.checked) {
         wednesdayEvents.style.display = "block";}
     else {
         wednesdayEvents.style.display = "none";}
 });
+//thursday event listener
 checkThursday.addEventListener("change", function() {
     if (checkThursday.checked) {
         thursdayEvents.style.display = "block";}
     else {
         thursdayEvents.style.display = "none";}
 });
+//friday event listener
 checkFriday.addEventListener("change", function() {
     if (checkFriday.checked) {
         fridayEvents.style.display = "block";}
     else {
         fridayEvents.style.display = "none";}
 });
+//saturday event listener
 checkSaturday.addEventListener("change", function() {
     if (checkSaturday.checked) {
         saturdayEvents.style.display = "block";}
     else {
         saturdayEvents.style.display = "none";}
 });
+//sunday event listener
 checkSunday.addEventListener("change", function() {
     if (checkSunday.checked) {
         sundayEvents.style.display = "block";}
@@ -85,6 +100,7 @@ var checkBirmingham = document.getElementById("birmingham-checkbox");
 var checkLondon = document.getElementById("london-checkbox");
 var checkManchester = document.getElementById("manchester-checkbox");
 //add event listeners to checkboxes to show or hide locations based on user selection
+//birmingham event listener
 checkBirmingham.addEventListener("change", function() {
     var birminghamEvents = document.querySelectorAll(".birmingham");
 if (checkBirmingham.checked) {
@@ -98,6 +114,7 @@ else {
     });
 }
 });
+//london event listener
 checkLondon.addEventListener("change", function() {
     var londonEvents = document.querySelectorAll(".london");
     if (checkLondon.checked) {
@@ -111,6 +128,7 @@ checkLondon.addEventListener("change", function() {
         });
     }
 });
+//manchester event listener
 checkManchester.addEventListener("change", function() {
     var manchesterEvents = document.querySelectorAll(".manchester");
     if (checkManchester.checked) {
@@ -131,6 +149,7 @@ var checkRunning = document.getElementById("running-checkbox");
 var checkDancing = document.getElementById("dancing-checkbox");
 var checkYoga = document.getElementById("yoga-checkbox");
 //add event listeners to checkboxes to show or hide activities based on user selection
+//swimming event listener
 checkSwimming.addEventListener("change", function() {
     var swimmingEvents = document.querySelectorAll(".swimming");
     if (checkSwimming.checked) {
@@ -144,6 +163,7 @@ checkSwimming.addEventListener("change", function() {
         });
     }
 });
+//running event listener
 checkRunning.addEventListener("change", function() {
     var runningEvents = document.querySelectorAll(".running");
     if (checkRunning.checked) {
@@ -157,6 +177,7 @@ checkRunning.addEventListener("change", function() {
         });
     }
 });
+//dancing event listener
 checkDancing.addEventListener("change", function() {
     var dancingEvents = document.querySelectorAll(".dancing");
     if (checkDancing.checked) {
@@ -170,6 +191,7 @@ checkDancing.addEventListener("change", function() {
         });
     }
 });
+//yoga event listener
 checkYoga.addEventListener("change", function() {
     var yogaEvents = document.querySelectorAll(".yoga");
     if (checkYoga.checked) {
@@ -190,6 +212,7 @@ var checkMorning = document.getElementById("morning-checkbox");
 var checkAfternoon = document.getElementById("afternoon-checkbox");
 var checkEvening = document.getElementById("evening-checkbox");
 //add event listeners to checkboxes to show or hide times based on user selection
+//morning event listener
 checkMorning.addEventListener("change", function() {
     var morningEvents = document.querySelectorAll(".morning");
      if (checkMorning.checked) {
@@ -203,6 +226,7 @@ checkMorning.addEventListener("change", function() {
                });
      }   
 });
+//afternoon event listener
 checkAfternoon.addEventListener("change", function() {
     var afternoonEvents = document.querySelectorAll(".afternoon");
      if (checkAfternoon.checked) {
@@ -216,6 +240,7 @@ checkAfternoon.addEventListener("change", function() {
                });
      }
 });
+//evening event listener
 checkEvening.addEventListener("change", function() {
     var eveningEvents = document.querySelectorAll(".evening");
      if (checkEvening.checked) {
@@ -229,3 +254,25 @@ checkEvening.addEventListener("change", function() {
                });
      }
 });
+
+
+var birminghamDropdown = document.getElementById("birmingham-dropdown");
+var londonDropdown = document.getElementById("london-dropdown");
+var manchesterDropdown = document.getElementById("manchester-dropdown");
+
+
+
+/*birminghamDropdown.addEventListener("click", function() {
+    checkBirmingham.checked = !checkBirmingham.checked;
+    checkBirmingham.dispatchEvent(new Event("change"));
+});
+
+londonDropdown.addEventListener("click", function() {
+    checkLondon.checked = !checkLondon.checked;
+    checkLondon.dispatchEvent(new Event("change"));
+});
+
+manchesterDropdown.addEventListener("click", function() {
+    checkManchester.checked = !checkManchester.checked;
+    checkManchester.dispatchEvent(new Event("change"));
+});*/

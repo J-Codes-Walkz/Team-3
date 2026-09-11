@@ -3,7 +3,7 @@ h2{ text-align: center;}
 
 .filter-options{display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
 .dropdown{margin: 10px; position: inherit;}
-#filter-label{margin: 2px; padding: 2px; text-decoration: underline; }
+#filter-label{margin: 2px; padding: 2px;  }
 /*Table styling*/
 table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center;}
 
