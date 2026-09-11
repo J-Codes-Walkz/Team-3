@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/8e98b6be0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    
     <!--bootstrap css link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <section id="events-section">
         <!--filter options-->
         <div class="filter-options">
-            <h2>Filter Options</h2>
+            <p id="filter-label">Filter Events:</p>
             <!--Location selection-->
             <span class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -27,9 +29,12 @@
                     Location
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="birmingham-checkbox"> Birmingham</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="london-checkbox"> London</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="manchester-checkbox"> Manchester</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="birmingham-checkbox">
+                            Birmingham</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="london-checkbox">
+                            London</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="manchester-checkbox">
+                            Manchester</a></li>
                 </ul>
             </span>
             <!--day selection-->
@@ -39,13 +44,20 @@
                     Day
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="monday-checkbox"> Monday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="tuesday-checkbox"> Tuesday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="wednesday-checkbox"> Wednesday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="thursday-checkbox"> Thursday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="friday-checkbox"> Friday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="saturday-checkbox"> Saturday</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="sunday-checkbox"> Sunday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="monday-checkbox">
+                            Monday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="tuesday-checkbox">
+                            Tuesday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="wednesday-checkbox">
+                            Wednesday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="thursday-checkbox">
+                            Thursday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="friday-checkbox">
+                            Friday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="saturday-checkbox">
+                            Saturday</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="sunday-checkbox">
+                            Sunday</a></li>
                 </ul>
             </span>
             <!--activity selection-->
@@ -55,10 +67,14 @@
                     Activity
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="swimming-checkbox"> Swimming</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="running-checkbox"> Running</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="dancing-checkbox"> Dancing</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="yoga-checkbox"> Yoga</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="swimming-checkbox">
+                            Swimming</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="running-checkbox">
+                            Running</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="dancing-checkbox">
+                            Dancing</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="yoga-checkbox"> Yoga</a>
+                    </li>
                 </ul>
             </span>
             <!--time selection-->
@@ -68,9 +84,12 @@
                     Time
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="morning-checkbox"> Morning</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="afternoon-checkbox"> Afternoon</a></li>
-                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="evening-checkbox"> Evening</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="morning-checkbox">
+                            Morning</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="afternoon-checkbox">
+                            Afternoon</a></li>
+                    <li><a class="dropdown-item"><input type="checkbox" checked="checked" id="evening-checkbox">
+                            Evening</a></li>
                 </ul>
             </span>
         </div>
@@ -149,7 +168,7 @@
                     <th>Find out more</th>
                 </tr>
                 <!--event data-->
-                <tr class="row-b dance london morning">
+                <tr class="row-b dancing london morning">
                     <td><i class="fa-solid fa-music"></i>Salsa</td>
                     <td>London, Fulham</td>
                     <td>09:00</td>
@@ -160,7 +179,7 @@
                         </a>
                     </td>
                 </tr>
-                <tr class="row-a dance birmingham morning">
+                <tr class="row-a dancing birmingham morning">
                     <td><i class="fa-solid fa-music"></i>Zumba Gold</td>
                     <td>Birmingham, Solihull</td>
                     <td>11:30</td>

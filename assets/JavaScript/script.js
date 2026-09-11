@@ -28,6 +28,7 @@ else if (day === 6)
      mondayEvents.style.order = 2, tuesdayEvents.style.order = 3, wednesdayEvents.style.order = 4, thursdayEvents.style.order = 5, fridayEvents.style.order = 6, saturdayEvents.style.order = 0, sundayEvents.style.order = 1;
 else {}
 
+//get day checkbox elements from html to use in conditional statements
 var checkMonday = document.getElementById("monday-checkbox");
 var checkTuesday = document.getElementById("tuesday-checkbox");
 var checkWednesday = document.getElementById("wednesday-checkbox");
@@ -35,7 +36,7 @@ var checkThursday = document.getElementById("thursday-checkbox");
 var checkFriday = document.getElementById("friday-checkbox");
 var checkSaturday = document.getElementById("saturday-checkbox");
 var checkSunday = document.getElementById("sunday-checkbox");
-
+//add event listeners to checkboxes to show or hide days based on user selection
 checkMonday.addEventListener("change", function() {
     if (checkMonday.checked) {
         mondayEvents.style.display = "block";}
@@ -77,4 +78,154 @@ checkSunday.addEventListener("change", function() {
         sundayEvents.style.display = "block";}
     else {
         sundayEvents.style.display = "none";}
+});
+
+//get location checkbox elements from html to use in conditional statements
+var checkBirmingham = document.getElementById("birmingham-checkbox");
+var checkLondon = document.getElementById("london-checkbox");
+var checkManchester = document.getElementById("manchester-checkbox");
+//add event listeners to checkboxes to show or hide locations based on user selection
+checkBirmingham.addEventListener("change", function() {
+    var birminghamEvents = document.querySelectorAll(".birmingham");
+if (checkBirmingham.checked) {
+    birminghamEvents.forEach(function(event) {
+        event.style.display = "table-row";
+    });
+}
+else {
+    birminghamEvents.forEach(function(event) {
+        event.style.display = "none";
+    });
+}
+});
+checkLondon.addEventListener("change", function() {
+    var londonEvents = document.querySelectorAll(".london");
+    if (checkLondon.checked) {
+        londonEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        londonEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+checkManchester.addEventListener("change", function() {
+    var manchesterEvents = document.querySelectorAll(".manchester");
+    if (checkManchester.checked) {
+        manchesterEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        manchesterEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+
+//get activity checkbox elements from html to use in conditional statements
+var checkSwimming = document.getElementById("swimming-checkbox");
+var checkRunning = document.getElementById("running-checkbox");
+var checkDancing = document.getElementById("dancing-checkbox");
+var checkYoga = document.getElementById("yoga-checkbox");
+//add event listeners to checkboxes to show or hide activities based on user selection
+checkSwimming.addEventListener("change", function() {
+    var swimmingEvents = document.querySelectorAll(".swimming");
+    if (checkSwimming.checked) {
+        swimmingEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        swimmingEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+checkRunning.addEventListener("change", function() {
+    var runningEvents = document.querySelectorAll(".running");
+    if (checkRunning.checked) {
+        runningEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        runningEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+checkDancing.addEventListener("change", function() {
+    var dancingEvents = document.querySelectorAll(".dancing");
+    if (checkDancing.checked) {
+        dancingEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        dancingEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+checkYoga.addEventListener("change", function() {
+    var yogaEvents = document.querySelectorAll(".yoga");
+    if (checkYoga.checked) {
+        yogaEvents.forEach(function(event) {
+            event.style.display = "table-row";
+        });
+    }
+    else {
+        yogaEvents.forEach(function(event) {
+            event.style.display = "none";
+        });
+    }
+});
+
+
+//get time checkbox elements from html to use in conditional statements
+var checkMorning = document.getElementById("morning-checkbox");
+var checkAfternoon = document.getElementById("afternoon-checkbox");
+var checkEvening = document.getElementById("evening-checkbox");
+//add event listeners to checkboxes to show or hide times based on user selection
+checkMorning.addEventListener("change", function() {
+    var morningEvents = document.querySelectorAll(".morning");
+     if (checkMorning.checked) {
+            morningEvents.forEach(function(event) {
+                    event.style.display = "table-row";
+               });
+     }
+     else {
+            morningEvents.forEach(function(event) {
+                    event.style.display = "none";
+               });
+     }   
+});
+checkAfternoon.addEventListener("change", function() {
+    var afternoonEvents = document.querySelectorAll(".afternoon");
+     if (checkAfternoon.checked) {
+            afternoonEvents.forEach(function(event) {
+                    event.style.display = "table-row";
+               });  
+     }
+     else {
+            afternoonEvents.forEach(function(event) {
+                    event.style.display = "none";
+               });
+     }
+});
+checkEvening.addEventListener("change", function() {
+    var eveningEvents = document.querySelectorAll(".evening");
+     if (checkEvening.checked) {
+               eveningEvents.forEach(function(event) {
+                    event.style.display = "table-row";
+               });
+     }
+     else {
+               eveningEvents.forEach(function(event) {
+                    event.style.display = "none";
+               });
+     }
 });
