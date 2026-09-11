@@ -28,3 +28,53 @@ else if (day === 6)
      mondayEvents.style.order = 2, tuesdayEvents.style.order = 3, wednesdayEvents.style.order = 4, thursdayEvents.style.order = 5, fridayEvents.style.order = 6, saturdayEvents.style.order = 0, sundayEvents.style.order = 1;
 else {}
 
+var checkMonday = document.getElementById("monday-checkbox");
+var checkTuesday = document.getElementById("tuesday-checkbox");
+var checkWednesday = document.getElementById("wednesday-checkbox");
+var checkThursday = document.getElementById("thursday-checkbox");
+var checkFriday = document.getElementById("friday-checkbox");
+var checkSaturday = document.getElementById("saturday-checkbox");
+var checkSunday = document.getElementById("sunday-checkbox");
+
+checkMonday.addEventListener("change", function() {
+    if (checkMonday.checked) {
+        mondayEvents.style.display = "block";}
+    else {
+        mondayEvents.style.display = "none";}
+});
+checkTuesday.addEventListener("change", function() {
+    if (checkTuesday.checked) {
+        tuesdayEvents.style.display = "block";}
+    else {
+        tuesdayEvents.style.display = "none";}
+});
+checkWednesday.addEventListener("change", function() {
+    if (checkWednesday.checked) {
+        wednesdayEvents.style.display = "block";}
+    else {
+        wednesdayEvents.style.display = "none";}
+});
+checkThursday.addEventListener("change", function() {
+    if (checkThursday.checked) {
+        thursdayEvents.style.display = "block";}
+    else {
+        thursdayEvents.style.display = "none";}
+});
+checkFriday.addEventListener("change", function() {
+    if (checkFriday.checked) {
+        fridayEvents.style.display = "block";}
+    else {
+        fridayEvents.style.display = "none";}
+});
+checkSaturday.addEventListener("change", function() {
+    if (checkSaturday.checked) {
+        saturdayEvents.style.display = "block";}
+    else {
+        saturdayEvents.style.display = "none";}
+});
+checkSunday.addEventListener("change", function() {
+    if (checkSunday.checked) {
+        sundayEvents.style.display = "block";}
+    else {
+        sundayEvents.style.display = "none";}
+});
