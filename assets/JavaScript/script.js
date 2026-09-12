@@ -2,6 +2,8 @@
 const d = new Date();
 let day = d.getDay();
 
+//set array of table days to use in conditional statements
+const tableDays = ["monday-table", "tuesday-table", "wednesday-table", "thursday-table", "friday-table", "saturday-table", "sunday-table"];
 
 //assign html elements to js elements to use later in conditional statments
 var mondayEvents = document.getElementById("monday");
@@ -68,6 +70,7 @@ checkTuesday.addEventListener("change", function () {
      else {
           tuesdayEvents.style.display = "none";
      }
+     
 });
 //wednesday event listener
 checkWednesday.addEventListener("change", function () {
@@ -77,6 +80,7 @@ checkWednesday.addEventListener("change", function () {
      else {
           wednesdayEvents.style.display = "none";
      }
+     
 });
 //thursday event listener
 checkThursday.addEventListener("change", function () {
@@ -86,6 +90,7 @@ checkThursday.addEventListener("change", function () {
      else {
           thursdayEvents.style.display = "none";
      }
+     
 });
 //friday event listener
 checkFriday.addEventListener("change", function () {
@@ -95,6 +100,7 @@ checkFriday.addEventListener("change", function () {
      else {
           fridayEvents.style.display = "none";
      }
+     
 });
 //saturday event listener
 checkSaturday.addEventListener("change", function () {
@@ -104,6 +110,7 @@ checkSaturday.addEventListener("change", function () {
      else {
           saturdayEvents.style.display = "none";
      }
+     
 });
 //sunday event listener
 checkSunday.addEventListener("change", function () {
@@ -113,6 +120,7 @@ checkSunday.addEventListener("change", function () {
      else {
           sundayEvents.style.display = "none";
      }
+     
 });
 
 //get location checkbox elements from html to use in conditional statements
@@ -135,13 +143,9 @@ checkBirmingham.addEventListener("change", function () {
           });
           
      }
-     visibleTableRows("monday-table");
-     visibleTableRows("tuesday-table");
-     visibleTableRows("wednesday-table");
-     visibleTableRows("thursday-table");
-     visibleTableRows("friday-table");
-     visibleTableRows("saturday-table");
-     visibleTableRows("sunday-table");
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //london event listener
 checkLondon.addEventListener("change", function () {
@@ -157,13 +161,9 @@ checkLondon.addEventListener("change", function () {
 
           });
      }
-     visibleTableRows("monday-table");
-     visibleTableRows("tuesday-table");
-     visibleTableRows("wednesday-table");
-     visibleTableRows("thursday-table");
-     visibleTableRows("friday-table");
-     visibleTableRows("saturday-table");
-     visibleTableRows("sunday-table");
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //manchester event listener
 checkManchester.addEventListener("change", function () {
@@ -179,13 +179,9 @@ checkManchester.addEventListener("change", function () {
 
           });
      }
-     visibleTableRows("monday-table");
-     visibleTableRows("tuesday-table");
-     visibleTableRows("wednesday-table");
-     visibleTableRows("thursday-table");
-     visibleTableRows("friday-table");
-     visibleTableRows("saturday-table");
-     visibleTableRows("sunday-table");
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 
 //get activity checkbox elements from html to use in conditional statements
@@ -207,6 +203,9 @@ checkSwimming.addEventListener("change", function () {
                event.style.display = "none";
           });
      }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //running event listener
 checkRunning.addEventListener("change", function () {
@@ -220,6 +219,9 @@ checkRunning.addEventListener("change", function () {
           runningEvents.forEach(function (event) {
                event.style.display = "none";
           });
+     }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
      }
 });
 //dancing event listener
@@ -235,6 +237,9 @@ checkDancing.addEventListener("change", function () {
                event.style.display = "none";
           });
      }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //yoga event listener
 checkYoga.addEventListener("change", function () {
@@ -248,6 +253,9 @@ checkYoga.addEventListener("change", function () {
           yogaEvents.forEach(function (event) {
                event.style.display = "none";
           });
+     }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
      }
 });
 
@@ -270,6 +278,9 @@ checkMorning.addEventListener("change", function () {
                event.style.display = "none";
           });
      }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //afternoon event listener
 checkAfternoon.addEventListener("change", function () {
@@ -284,6 +295,9 @@ checkAfternoon.addEventListener("change", function () {
                event.style.display = "none";
           });
      }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
+     }
 });
 //evening event listener
 checkEvening.addEventListener("change", function () {
@@ -297,6 +311,9 @@ checkEvening.addEventListener("change", function () {
           eveningEvents.forEach(function (event) {
                event.style.display = "none";
           });
+     }
+     for (var i = 0; i < tableDays.length; i++) {
+          visibleTableRows(tableDays[i]);
      }
 });
 
@@ -333,6 +350,12 @@ function visibleTableRows(tableId) {
      tableRows.forEach(function (tr) {
           if (tr.style.display !== "none") {
                ++count;
+               //alternate row colors for visible rows
+               if(count % 2 === 0) {
+                    tr.style.backgroundColor = "white";
+               } else {
+                    tr.style.backgroundColor = "lightgray";
+               }
           }
 
 
