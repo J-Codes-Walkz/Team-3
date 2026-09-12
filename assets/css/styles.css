@@ -1,15 +1,20 @@
 
 h2{ text-align: center;}
 
-.filter-options{display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
+
+
+.filter-section{display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+.filter-label-and-reset{display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+.filter-options{display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 20px;}
 .dropdown{margin: 10px; position: inherit;}
 #filter-label{margin: 2px; padding: 2px;  }
 /*Table styling*/
-table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center;}
+table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center; margin-bottom: 20px; }
 
 .row-a{background-color: white;}
 .row-b{background-color: lightgray;}
-th{background-color: #2a46fa; color: white; }
+.day-title{background-color: #2a46fa; color: white }
+
 
 
 #events-section {display: flex; flex-wrap: wrap;}
