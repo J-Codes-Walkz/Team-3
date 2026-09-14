@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #11171b;
+    color: white;
+}
+
+.activities {
+    padding: 70px 0;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(120deg, #06262b, #17232a, #292b2e);
+}
+
+.activities h2 {
+    color: #ffffff;
+}
+
+.section-text {
+    font-size: 18px;
+    color: #b8bec5;
+    margin: 0 20px 40px;
+}
+
+
+
+.carousel {
+    display: flex;
+    width: max-content;
+    animation: slide 25s linear infinite;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.3s;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.slide:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slide:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #e76f3c;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 26px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 8px 0 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.slide:hover .info p {
+    opacity: 1;
+    max-height: 100px;
+}
+
+.city {
+    background-image: url("assets/images/city.jpg");
+}
+
+.rural {
+    background-image: url("assets/images/rural.jpg");
+}
+
+.indoor {
+    background-image: url("assets/images/indoor.jpg");
+}
+
+.distance {
+    background-image: url("assets/images/distance.jpg");
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .activities h2 {
+        font-size: 28px;
+    }
+
+    .slide {
+        width: 300px;
+        height: 230px;
+    }
+
+    .info h3 {
+        font-size: 22px;
+    }
+}
