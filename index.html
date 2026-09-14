@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Activities</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run & Brunch</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <!-- Top Header Bar -->
+  <header class="hero-header">
+
+    <!-- Search (Left) -->
+    <div class="hero-search">
+      <input type="text" placeholder="Search events, routes...">
+    </div>
+
+    <!-- Navigation (Center) -->
+    <nav class="hero-nav">
+      <a href="#events">Events</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Auth Buttons (Right) -->
+    <div class="hero-auth">
+      <a href="#login">Log in</a>
+      <a href="#signup" class="hero-auth-btn">Sign up</a>
+    </div>
+
+  </header>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Push Your Limits</h1>
+    <p class="hero-subtitle">Train | Track progress | Join the movement</p>
+    <a href="#" class="hero-btn" id="join-btn">Join Today</a>
+  </div>
+</section>
 
 <section class="activities">
 
@@ -76,5 +110,78 @@
         </div>
     </div>
 </section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <h2>Train Together | Stay Together</h2>
+      <p>Across The UK 🇬🇧</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#help">Help</a>
+      <a href="#company">Company</a>
+      <a href="#careers">Careers</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">X</a>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">© 2026 Team 3. All rights reserved.</p>
+</footer>
+
+<!-- JOIN POPUP -->
+<div class="join-modal-overlay" id="join-modal">
+  <div class="join-modal">
+    <button class="join-close" id="join-close">&times;</button>
+    <h2>Join an Event</h2>
+
+    <form class="join-form">
+      <label>
+        Full Name
+        <input type="text" name="fullName" placeholder="Your full name">
+      </label>
+
+      <label>
+        Email Address
+        <input type="email" name="email" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Location
+        <select name="location">
+          <option value="">Select a city</option>
+          <option value="birmingham">Birmingham</option>
+          <option value="manchester">Manchester</option>
+          <option value="london">London</option>
+        </select>
+      </label>
+
+      <label>
+        Event Type
+        <select name="eventType">
+          <option value="">Select an event</option>
+          <option value="swimming">Swimming</option>
+          <option value="running">Running</option>
+          <option value="dancing">Dancing</option>
+          <option value="yoga">Yoga</option>
+        </select>
+      </label>
+
+      <button type="submit" class="join-submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="assets/JavaScript/script.js"></script>
+
 </body>
 </html>
