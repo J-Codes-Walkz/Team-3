@@ -13,7 +13,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url("../assets/images/backgroundss.jpg") center/cover fixed no-repeat;
+  background: url("..\images\backgroundss.jpg") center/cover fixed no-repeat;
   color: var(--text-light);
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ a, button {
 .hero {
   background:
     linear-gradient(120deg, rgba(26,26,29,0.7), rgba(35,38,46,0.7), rgba(10,26,47,0.7)),
-    url("../assets/images/yogaimage.jpg") center/cover no-repeat;
+    url("../images/yogaimage.jpg") center/cover no-repeat;
   min-height: 70vh;
   padding: 60px 20px;
   display: flex;
