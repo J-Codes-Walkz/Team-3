@@ -341,7 +341,6 @@ function expandDropdown(dropdownId) {
      }
 }
 
-
 //function to hide day title and table header if no events are displayed
 function visibleTableRows(tableId) {
      
@@ -478,3 +477,5 @@ signupModal.addEventListener("click", e => {
     signupModal.style.display = "none";
   }
 });
+
+
