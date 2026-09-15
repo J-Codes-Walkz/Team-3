@@ -4,8 +4,8 @@
 
 ## Links
 
-- **Deployed Website:** [Add link]
-- **Project Repository:** [Add link]
+- **Deployed Website:** [https://j-codes-walkz.github.io/Team-3/]
+- **Project Repository:** [https://github.com/users/J-Codes-Walkz/projects/4]
 
 ---
 
