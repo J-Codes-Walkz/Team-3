@@ -1,265 +1,168 @@
-# Team-3-
-Team 3 Hackathon 
-# Team-3-
+# Team 3 Hackathon
 
-Run & Brunch Project Documentation
-▪ README
-▪ AI-usage document
-▪ Kanban layout
-▪ User stories
-▪ Testing documentation
-▪ Deployment guide
-You can copy/paste these into separate files and tweak names/details.
+# Team 3 - Active Community
 
+## Links
 
+- **Deployed Website:** [Add link]
+- **Project Repository:** [Add link]
 
-1. README.md (Project Overview)
-
-
-
-# Run & Brunch - Active Days in the West Midlands
-
+---
 
 ## Overview
-Run & Brunch is a one-page interactive web application that helps users discover
-runs, walks, brunch meetups, and family activities across the West Midlands.
+
+Our project is a one-page interactive fitness and activity website designed to help users discover activities and events across the UK.
+
 Users can:
-- Filter events by difficulty and time of day
-- View event cards with details (location, tags, difficulty)
-- Sign up for tailored suggestions via a simple form
+- Explore different activities through an interactive carousel
+- Browse weekly fitness and community events
+- Filter events by location, day, activity and time
+- Join through an interactive sign-up form
 
+---
 
-
-***
-## Learning Outcomes Mapping
-- **LO1:** One-page interactive app using HTML, CSS, and JavaScript with focus on UX,
-accessibility, and DOM manipulation.
-
-- **LO2:** Tested and validated through HTML/CSS validation, manual testing, and
-screenshots.
-
-- **LO3:** Deployed to a cloud platform (e.g., Netlify, GitHub Pages, or Vercel).
-
-- **LO4:** Maintainable structure with clear documentation, folder organization, and
-comments.
-
-- **LO5:** Front-end interactivity implemented using core JavaScript and DOM manipulation.
-
-- **LO6:** AI tools leveraged for planning, code generation, debugging, and documentation.
-
-
-
-***
 ## Features
-- Dark, high-contrast UI
-- Responsive event grid
-- Filter by difficulty (beginner, intermediate, advanced)
-- Filter by time of day (morning, afternoon, evening)
-- Dynamic event cards rendered via JavaScript
-- Sign-up form with tailored confirmation message
-- Smooth scrolling navigation
 
+### Hero Section
+- Navigation to different sections of the website
+- Search bar
+- "Join Today" button
 
-***
+### Explore Your Way - Activity Carousel
+- Continuous scrolling activity carousel
+- City Runs, Rural Hikes, Indoor Fitness and Distance Running
+- Interactive hover effects reveal activity descriptions
+- Carousel pauses when hovered over
+- Responsive design for smaller screens
+
+### Events Section
+- Weekly event timetable
+- Filter events by location, day, activity and time
+- Reset filters option
+- Links to find out more about events
+
+### Join Form
+- Interactive pop-up form
+- Users can enter their name and email
+- Users can select their location and preferred event type
+
+---
+
 ## Tech Stack
+
 - **HTML5** - Structure and semantics
-- **CSS3** - Layout, styling, responsive design
-- **JavaScript (ES6+)** - DOM manipulation, filtering, form handling
+- **CSS3** - Layout, styling, animations and responsive design
+- **JavaScript (ES6+)** - DOM manipulation, filtering and interactivity
+- **Bootstrap** - Responsive components and styling
+- **Font Awesome** - Icons
+
+---
+
+User Stories (for LO1 & LO6)
+
+## User Stories
+
+1. As a **user**, I want to explore different types of activities so I can find something that interests me.
+2. As a **user**, I want to filter events by location so I can find activities near me.
+3. As a **busy user**, I want to filter events by day and time so I can find activities that fit my schedule.
+4. As a **user**, I want to filter by activity type so I can quickly find events I am interested in.
+5. As a **new user**, I want a simple way to join so I can register my interest in activities.
+6. As a **mobile user**, I want the website to be responsive so I can use it easily on different devices.
+
+## Team
+
+**Team 3:**
+- Jamie
+- Evan
+- Jasmeen
+
+---
+## Team Contributions
+
+### Jamie
+[Jamie's coding work]
+
+### Jasmeen - Explore Your Way Carousel
+
+- Developed the activity carousel
+- Added four activity categories with images and descriptions
+- Created the continuous scrolling animation
+- Added hover effects to reveal more information
+- Added pause-on-hover functionality
+- Added responsive styling for smaller screens
+
+### Evan
+[Evan's coding work]
+
+---
+
+## Testing
+
+### Complete code testing
+
+
+
+### Individual testing - Jamie 
+
+### Individual testing - Jasmeen
+
+- HTML tested using the W3C HTML Validator - passed with no errors, one heading-level warning.
+- CSS tested using the W3C CSS Validator - passed with no errors.
+- Carousel manually tested for scrolling, hover effects, images and responsiveness - all working correctly.
+- Screenshots of validation results included as evidence.
+
+<img width="918" height="751" alt="html-validation" src="https://github.com/user-attachments/assets/dcf66313-ff29-46e1-a74f-a4e76bdf6b98" />
+
+<img width="918" height="652" alt="css-validation" src="https://github.com/user-attachments/assets/6503e568-1326-439a-8610-9bb3a17f64e0" />
+
+
+
+### Individual testing - Evan
+
+---
+
+## Deployment
+
+Push the completed project to GitHub, enable GitHub Pages from the repository settings, select the
+appropriate deployment branch, and test the generated live website URL
+
+## Credits
+
+### Carousel images
+- Urban Run - Iliya Jokic, Unsplash- https://unsplash.com/photos/a-man-running-in-front-of-a-city-skyline-BcJyBN4jDHY
+- Rural Hike - Nathan Ziemanski, Unsplash- https://unsplash.com/photos/man-in-black-t-shirt-and-blue-denim-jeans-walking-on-dirt-road-during-daytime-oNgSnXBj6xQ
+- Indoor Fitness - Bruce Mars, Unsplash- https://unsplash.com/photos/group-of-women-doing-yoga-gJtDg6WfMlQ
+- Distance Running - Miguel A Amutio, Unsplash- https://unsplash.com/photos/a-group-of-people-running-down-a-street-13zjsCSD2fc
+
+### Other images
+
 ***
-
-
-How to Run Locally
-1. Clone the repository:
-git clone <your-repo-url>
-cd <your-repo-folder>
-2. Open index.html in your browser:
-▪ Double-click index.html, or
-▪ Use a local server (e.g., VS Code Live Server)
-
-
-How to Deploy
-▪ GitHub Pages:
-▪ Push code to GitHub
-▪ Enable Pages from Settings → Pages
-▪ Netlify/Vercel:
-▪ Connect your GitHub repo
-▪ Select index.html as entry point
-▪ Deploy and test the live URL
-Testing
-▪ HTML validation via W3C Validator
-▪ CSS validation via W3C CSS Validator
-▪ Manual testing of filters and form
-▪ Accessibility checks (keyboard navigation, contrast)
-▪ Screenshots captured at key stages
-
-
-Team
-▪ Team 3: Jasmeen, Sangijta, Evan, Jamie
-***
-## 2. AI-usage.md (AI Documentation)
-```markdown
-
 # AI Usage Documentation
-This document explains how AI tools were used during the development of
-the Run & Brunch web application.
 
-***
+This document explains how AI tools were used to support the planning, development, debugging and documentation of the project.
+
 ## Planning
-- Brainstormed project ideas (runs, brunch, kids activities, health focus).
-- Refined concept into a one-page interactive app aligned with learning outcomes.
-- Generated user stories and feature list.
 
-***
+AI was used to:
+- Brainstorm and refine the initial project idea
+- Suggest features and user stories
+- Help plan the structure and layout of the website
+
 ## Design & Structure
-- Suggested layout: hero, filters, events, sign-up, footer.
-- Proposed folder structure and naming conventions.
-- Recommended dark theme color palette (deep blue + offset yellow).
 
-***
-## Code Generation
 AI assisted with:
-- Initial HTML structure (sections, semantic tags).
-- CSS for dark theme, responsive grid, and form styling.
-- JavaScript for:
- - Event data structure
- - Filter logic
- - Dynamic card rendering
- - Form handling and confirmation message
- - Smooth scrolling
+- Layout and UX ideas
+- Colour and styling suggestions
+- Responsive design suggestions
+- Organising HTML and CSS structure
 
-All AI-generated code was:
-- Reviewed by the team
-- Tested and debugged
-- Modified to fit project requirements
-***
+## Code Development
 
+AI assisted with:
+- HTML, CSS and JavaScript development
+- CSS animations and hover effects
+- Event filtering functionality
+- Debugging and troubleshooting
+- Git and GitHub guidance
 
-3. Kanban Board Layout (for Trello/Jira/Notion)
-You can set this up in Trello with four columns:
-Columns:
-▪ Backlog
-▪ In Progress
-▪ Review
-▪ Done
-
-
-Example Cards:
-▪ Backlog
-▪ Define user stories
-▪ Create wireframes
-▪ Set up repo and folder structure
-▪ Implement event data structure
-▪ Build filter UI
-▪ Implement event rendering
-▪ Implement sign-up form
-▪ Accessibility checks
-▪ Testing & validation
-▪ Deployment
-▪ Documentation (README, AI-usage)
-▪ In Progress
-▪ Build HTML structure
-▪ Style hero and header
-▪ Implement filter logic
-▪ Review
-▪ JS filter behavior
-▪ Form validation
-▪ Responsive layout
-▪ Done
-▪ Event data created
-▪ Initial layout complete
-
-▪ Deployment live
-You can take screenshots of the board at different stages to show process.
-4. User Stories (for LO1 & LO6)
-
-# User Stories
-1. As a **beginner runner**, I want to filter events by difficulty so I can find runs that match
-my level.
-2. As a **parent**, I want to see family-friendly events so I can plan active days out with my
-kids.
-3. As a **busy professional**, I want to filter events by time of day so I can find activities that
-fit my schedule.
-4. As a **social runner**, I want to see events that include brunch or social meetups so I can
-connect with others.
-5. As a **new user**, I want to sign up with my email and preferences so I can receive
-tailored suggestions.
-6. As a **visitor**, I want the site to be easy to navigate and readable on mobile and desktop
-devices.
-
-5. Testing Documentation
-
-
-# Testing & Validation
-## HTML Validation
-- Tool: W3C Markup Validation Service
-- Action: Uploaded `index.html` and fixed any reported errors.
-- Result: No critical validation errors.
-
-## CSS Validation
-- Tool: W3C CSS Validation Service
-- Action: Uploaded `assets/css/style.css`.
-- Result: Fixed invalid selectors or properties.
-
-## JavaScript Testing
-### Functional Tests
-- **Filter events:**
- - Selected different difficulty and time combinations.
- - Verified that event cards update correctly.
-- **No results case:**
- - Used filters that match no events.
- - Confirmed "No events match your filters." message appears.
-- **Sign-up form:**
- - Tested required fields.
- - Tested invalid email formats.
- - Confirmed tailored message appears after submission.
-
-### Console Checks
-- Opened DevTools console.
-- Ensured no uncaught errors.
-- Used `console.log` during development to inspect data.
-
-## Accessibility Testing
-- Keyboard navigation:
- - Tabbed through links, buttons, and form fields.
-- Contrast:
- - Verified text is readable against dark background.
-- Labels:
- - Ensured form inputs have associated labels.
-
-## Responsive Testing
-- Used browser DevTools responsive mode.
-
-
-6. Deployment Guide
-
-# Deployment Guide
-## Option 1: GitHub Pages
-1. Push project to GitHub.
-2. Go to `Settings → Pages`.
-3. Select `Branch: main` and `/root` folder.
-4. Save and wait for deployment.
-5. Copy the live URL and test in browser.
-
-## Option 2: Netlify
-1. Create a Netlify account.
-2. Click "New site from Git".
-3. Connect your GitHub repository.
-4. Use default build settings (no build step needed for static HTML).
-5. Deploy and test the live URL.
-6. Check:
- - `index.html` loads correctly.
- - CSS and JS paths are correct (`assets/css/style.css`, `assets/js/app.js`).
- - No console errors.
-
-## Option 3: Vercel
-1. Create a Vercel account.
-2. Import your GitHub repository.
-3. Use default settings for static site.
-4. Deploy and test the live URL.
-
-## Post-Deployment Checks
-- Test filters and form on the live site.
-- Confirm responsive behavior.
-- Confirm HTTPS is active.
-- Take screenshots of the live site for documentation.
-
+All AI-generated suggestions were reviewed, tested and modified by the team before being included in the project.
