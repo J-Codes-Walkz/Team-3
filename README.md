@@ -21,6 +21,11 @@ Users can:
 
 ---
 
+## Wireframe 
+
+<img width="501" height="616" alt="Team-3 Project Wireframe " src="https://github.com/user-attachments/assets/17e97854-3517-4a30-88e6-109b24c6d8e9" />
+
+
 ## Features
 
 ### Hero Section
@@ -125,6 +130,20 @@ User Stories (for LO1 & LO6)
 
 Push the completed project to GitHub, enable GitHub Pages from the repository settings, select the
 appropriate deployment branch, and test the generated live website URL
+
+## Future Features
+
+- User accounts and personal profiles
+- Save favourite events
+- Track personal activity and fitness progress
+- Personalised activity recommendations
+- Interactive map for nearby events
+- Event booking and registration
+- Social media icons and sharing
+- Community challenges and leaderboards
+- Add a search bar to navigate website and events.
+- Widgets for ios and android.
+
 
 ## Credits
 
