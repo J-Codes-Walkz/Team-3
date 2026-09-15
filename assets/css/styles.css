@@ -35,11 +35,14 @@ table{border-collapse: separate; border-spacing: 1px; background-color: #ff6a00;
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url("..\images\backgroundss.jpg") center/cover fixed no-repeat;
+  background: url("../images/backgroundss.jpg") center/cover fixed no-repeat;
   color: var(--text-light);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a, button {
