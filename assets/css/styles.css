@@ -31,19 +31,32 @@ table{border-collapse: separate; border-spacing: 1px; background-color: #ff6a00;
   --text-light: #ffffff;
   --text-muted: rgba(255, 255, 255, 0.8);
   --bg-dark: #0a0a0a;
+  --bg-gradient-top: #11131a;
+  --bg-gradient-mid: #0d1017;
+  --bg-gradient-low: #0a0c12;
+  --bg-gradient-bottom: #08090d;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url("..\images\backgroundss.jpg") center/cover fixed no-repeat;
+  background: url("../images/backgroundss.jpg") center/cover fixed no-repeat;
   color: var(--text-light);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-a, button {
-  transition: all 0.3s ease;
+.footer {
+  margin-top: auto;
+}
+
+
+
+#middle-scroll {
+  min-height: 400px;
 }
 
 /* ===========================
@@ -179,24 +192,25 @@ a, button {
 
 
 /* Gradient heading */
-.activities h2 {
+/*.activities h2 {
   background: linear-gradient(120deg, #00c6ff, #0072ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-size: 2.3rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.5px;
   margin-bottom: 8px;
-  text-shadow: 0 2px 6px rgba(0, 114, 255, 0.25);
+  
 }
+#activities-text-headers{background-color: rgba(255, 106, 0, 0.5);}*/
 
 /* Black paragraph text */
-.section-text {
+/*.section-text {
   font-size: 1.05rem;
   color: #000 !important;
   margin-bottom: 25px;
-}
+}*/
 
 /* Carousel */
 .carousel {
@@ -264,47 +278,71 @@ a, button {
    FOOTER
    =========================== */
 .footer {
-  background: var(--bg-dark);
+  background: linear-gradient(
+    180deg,
+    var(--bg-gradient-top),
+    var(--bg-gradient-mid),
+    var(--bg-gradient-low),
+    #000000
+  );
   color: var(--text-light);
-  padding: 30px 20px;
-  margin-top: 20px;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
+
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   max-width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.footer-brand h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 8px;
-  color: var(--accent);
+.footer-brand {
+  text-align: center;
+}
+
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
 }
 
 .footer-links a,
 .footer-social a {
-  display: block;
   color: var(--text-light);
+  opacity: 0.85;
   text-decoration: none;
   margin-bottom: 6px;
-  font-weight: 500;
+  font-weight: 400;
+  transition: 0.3s ease;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
+  opacity: 1;
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+.footer-social a:hover i {
+  opacity: 1;
   color: var(--accent);
 }
 
 .footer-copy {
   text-align: center;
-  margin-top: 20px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
 }
 
 /* ===========================
@@ -402,11 +440,7 @@ a, button {
 
 
 /*carosell css*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-}
+
 
 .activities {
     padding: 70px 0;
