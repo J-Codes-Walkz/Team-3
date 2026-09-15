@@ -354,7 +354,7 @@ function visibleTableRows(tableId) {
                if(count % 2 === 0) {
                     tr.style.backgroundColor = "white";
                } else {
-                    tr.style.backgroundColor = "lightgray";
+                    tr.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                }
           }
 
