@@ -4,16 +4,16 @@ h2{ text-align: center;}
 
 
 .filter-section{display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
-.filter-label-and-reset{display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+.filter-label-and-reset{display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap; color:black; margin-right: 10px;}
 .filter-options{display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 20px;}
 .dropdown{margin: 10px; position: inherit;}
 #filter-label{margin: 2px; padding: 2px;  }
 /*Table styling*/
-table{border-collapse: separate; border-spacing: 1px; background-color: black; width:100%; text-align: center; margin-bottom: 20px; }
+table{border-collapse: separate; border-spacing: 1px; background-color: #ff6a00; width:100%; text-align: center; margin-bottom: 20px; color:black;}
 
-.row-a{background-color: white;}
-.row-b{background-color: lightgray;}
-.day-title{background-color: #2a46fa; color: white }
+.row-a{background-color: rgba(255, 255, 255, 1);}
+.row-b{background-color: rgba(255, 255, 255, 0.9);}
+.day-title{background-color: #ff6a00; color: white }
 
 
 
@@ -404,7 +404,6 @@ a, button {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #11171b;
     color: white;
 }
 
@@ -412,7 +411,6 @@ body {
     padding: 70px 0;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(120deg, #06262b, #17232a, #292b2e);
 }
 
 .activities h2 {
