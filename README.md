@@ -30,9 +30,13 @@ Users can:
 
 ## Features
 
-### Hero Section
+### Header/Hero Section
 - Navigation to different sections of the website
 - "Join Today" button
+- "About"
+- "Events"
+- "Contact"
+- "Sign in & Login" 
 
 ### Explore Your Way - Activity Carousel
 - Continuous scrolling activity carousel
@@ -48,7 +52,7 @@ Users can:
 - Links to find out more about events
 - Events automatically show with today's day at the top 
 
-### Join Form
+### Join Form / Contact Form 
 - Interactive pop-up form
 - Users can enter their name and email
 - Users can select their location and preferred event type
@@ -87,7 +91,13 @@ User Stories (for LO1 & LO6)
 ## Team Contributions
 
 ### Jamie
-[Jamie's coding work]
+- Developed Header/Hero/Background/Footer - Html/CSS
+- Modals (button interactivity) & Popups - Signup/Login/About/Events/Contact forms/ Join Today - HTML/CSS/JavaScript 
+- Weblinks in Footer - Facebook/Instagram & X
+- Overall colour styles, header image and background image - This primarily followed Strava's website and overall feel as inspiration
+- Further CSS Styling included - Hover / accent hover / Gradients / targeted modals / overall image balance 
+- Google API: Textfonts
+- 2 Images (Header Style with opaque overlay in line with overall webpage) & Background image embedded with content sitting ontop, for a more professional, sleek feel.
 
 ### Jasmeen - Explore Your Way Carousel
 
@@ -116,9 +126,14 @@ User Stories (for LO1 & LO6)
 
 ### Complete code testing
 
+Successful Local Deployment through Github Pages. 
 
 
 ### Individual testing - Jamie 
+- HTML: Pass
+- CSS: Pass
+- JavaScript: 2 Errors initially, now fixe.
+- Screenshots are within the Repo Files 
 
 ### Individual testing - Jasmeen
 
