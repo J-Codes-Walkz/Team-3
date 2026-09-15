@@ -24,13 +24,14 @@ Users can:
 ## Wireframe 
 
 <img width="501" height="616" alt="Team-3 Project Wireframe " src="https://github.com/user-attachments/assets/17e97854-3517-4a30-88e6-109b24c6d8e9" />
+<img width="329" height="325" alt="wire-frame-pop-up" src="https://github.com/user-attachments/assets/12f860fe-4cef-473f-a52a-015588200104" />
+
 
 
 ## Features
 
 ### Hero Section
 - Navigation to different sections of the website
-- Search bar
 - "Join Today" button
 
 ### Explore Your Way - Activity Carousel
@@ -45,6 +46,7 @@ Users can:
 - Filter events by location, day, activity and time
 - Reset filters option
 - Links to find out more about events
+- Events automatically show with today's day at the top 
 
 ### Join Form
 - Interactive pop-up form
@@ -97,7 +99,16 @@ User Stories (for LO1 & LO6)
 - Added responsive styling for smaller screens
 
 ### Evan
-[Evan's coding work]
+- Created an events timetable w/ real events and links to external sources
+- Created dropdown menus to filter event options
+- Added icons to events and links
+- Added JavaScript to pull devices day and order events accordingly
+- Used JavaScript functions to filter events by day, time, activity and location
+- Created a JavaScript function to hide any non-relevant table headers
+- Used JavaScript to alternate table row colors automaticly responding to any removal of rows
+- Added favicon and title to show in tab header
+- Created a re-set filters button that rechecks all filter boxes and shows all hidden content
+- Added a JavaScript function that keeps dropdown menus open unless the dropdown button is clicked to allow multiple filter selections
 
 ---
 
