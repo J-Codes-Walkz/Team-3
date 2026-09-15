@@ -404,7 +404,6 @@ a, button {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #11171b;
     color: white;
 }
 
@@ -412,11 +411,12 @@ body {
     padding: 70px 0;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(120deg, #06262b, #17232a, #292b2e);
 }
 
 .activities h2 {
-    color: #ffffff;
+    background: none;
+    -webkit-text-fill-color: #111827;
+    color: #111827;
 }
 
 .section-text {
