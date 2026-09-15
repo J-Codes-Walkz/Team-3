@@ -59,577 +59,8 @@
         From city streets to mountain trails, there's an activity for everyone.
     </p>
 
-    <div class="carousel">
-
-        <div class="slide city">
-            <div class="info">
-                <h3>🏙️ City Runs</h3>
-                <p>Explore running routes, group runs and activities around the city.</p>
-            </div>
-        </div>
-
-        <div class="slide rural">
-            <div class="info">
-                <h3>⛰️ Rural Hikes</h3>
-                <p>Discover countryside walks, hiking routes and scenic trails for all abilities.</p>
-            </div>
-        </div>
-
-        <div class="slide indoor">
-            <div class="info">
-                <h3>🏋️ Indoor Fitness</h3>
-                <p>Fitness classes, gym sessions for all ages, open swimming sessions and more.</p>
-            </div>
-        </div>
-
-        <div class="slide distance">
-            <div class="info">
-                <h3>🏃 Distance Running</h3>
-                <p>Take on longer running routes, build your endurance and reach new personal goals.</p>
-            </div>
-        </div>
-
-        <div class="slide city">
-            <div class="info">
-                <h3>🏙️ City Runs</h3>
-                <p>Explore running routes, group runs and activities around the city.</p>
-            </div>
-        </div>
-
-        <div class="slide rural">
-            <div class="info">
-                <h3>⛰️ Rural Hikes</h3>
-                <p>Discover countryside walks, hiking routes and scenic trails for all abilities.</p>
-            </div>
-        </div>
-
-        <div class="slide indoor">
-            <div class="info">
-                <h3>🏋️ Indoor Fitness</h3>
-                <p>Fitness classes, gym sessions for all ages, open swimming sessions and more.</p>
-            </div>
-        </div>
-
-        <div class="slide distance">
-            <div class="info">
-                <h3>🏃 Distance Running</h3>
-                <p>Take on longer running routes, build your endurance and reach new personal goals.</p>
-            </div>
-        </div>
-    </div>
+    <div id="middle-scroll"></div>
 </section>
-
- <section id="events-section">
-        <!--filter options-->
-        
-        <div id="event-filters" class="filter-section">
-            <span class="filter-label-and-reset">
-                <p id="filter-label">Filter Events: </p>
-                <button type="button" class="btn btn-outline-secondary" id="reset-filters"
-                    onclick="resetAllFilters()">Reset Filters</button>
-            </span>
-            <span class="filter-options">
-
-                <!--Location selection-->
-                <span class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" id="location-button" onclick="expandDropdown('location-dropdown')">
-                        Location
-                    </button>
-                    <ul class="dropdown-menu" id="location-dropdown">
-                        <li><label class="dropdown-item" id="birmingham-dropdown" for="birmingham-checkbox"><input
-                                    type="checkbox" checked="checked" id="birmingham-checkbox" class="checkbox">
-                                Birmingham</label></li>
-                        <li><label class="dropdown-item" id="london-dropdown" for="london-checkbox"><input
-                                    type="checkbox" checked="checked" id="london-checkbox" class="checkbox">
-                                London</label></li>
-                        <li><label class="dropdown-item" id="manchester-dropdown" for="manchester-checkbox"><input
-                                    type="checkbox" checked="checked" id="manchester-checkbox" class="checkbox">
-                                Manchester</label></li>
-                    </ul>
-                </span>
-                <!--day selection-->
-                <span class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" onclick="expandDropdown('day-dropdown')">
-                        Day
-                    </button>
-                    <ul class="dropdown-menu" id="day-dropdown">
-                        <li><label class="dropdown-item" id="monday-dropdown" for="monday-checkbox"><input
-                                    type="checkbox" checked="checked" id="monday-checkbox" class="checkbox">
-                                Monday</label></li>
-                        <li><label class="dropdown-item" id="tuesday-dropdown" for="tuesday-checkbox"><input
-                                    type="checkbox" checked="checked" id="tuesday-checkbox" class="checkbox">
-                                Tuesday</label></li>
-                        <li><label class="dropdown-item" id="wednesday-dropdown" for="wednesday-checkbox"><input
-                                    type="checkbox" checked="checked" id="wednesday-checkbox" class="checkbox">
-                                Wednesday</label></li>
-                        <li><label class="dropdown-item" id="thursday-dropdown" for="thursday-checkbox"><input
-                                    type="checkbox" checked="checked" id="thursday-checkbox" class="checkbox">
-                                Thursday</label></li>
-                        <li><label class="dropdown-item" id="friday-dropdown" for="friday-checkbox"><input
-                                    type="checkbox" checked="checked" id="friday-checkbox" class="checkbox">
-                                Friday</label></li>
-                        <li><label class="dropdown-item" id="saturday-dropdown" for="saturday-checkbox"><input
-                                    type="checkbox" checked="checked" id="saturday-checkbox" class="checkbox">
-                                Saturday</label></li>
-                        <li><label class="dropdown-item" id="sunday-dropdown" for="sunday-checkbox"><input
-                                    type="checkbox" checked="checked" id="sunday-checkbox" class="checkbox">
-                                Sunday</label></li>
-                    </ul>
-                </span>
-                <!--activity selection-->
-                <span class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" onclick="expandDropdown('activity-dropdown')">
-                        Activity
-                    </button>
-                    <ul class="dropdown-menu" id="activity-dropdown">
-                        <li><label class="dropdown-item" id="swimming-dropdown" for="swimming-checkbox"><input
-                                    type="checkbox" checked="checked" id="swimming-checkbox" class="checkbox">
-                                Swimming</label></li>
-                        <li><label class="dropdown-item" id="running-dropdown" for="running-checkbox"><input
-                                    type="checkbox" checked="checked" id="running-checkbox" class="checkbox">
-                                Running</label></li>
-                        <li><label class="dropdown-item" id="dancing-dropdown" for="dancing-checkbox"><input
-                                    type="checkbox" checked="checked" id="dancing-checkbox" class="checkbox">
-                                Dancing</label></li>
-                        <li><label class="dropdown-item" id="yoga-dropdown" for="yoga-checkbox"><input type="checkbox"
-                                    checked="checked" id="yoga-checkbox" class="checkbox">
-                                Yoga</label></li>
-                    </ul>
-                </span>
-                <!--time selection-->
-                <span class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" onclick="expandDropdown('time-dropdown')">
-                        Time
-                    </button>
-                    <ul class="dropdown-menu" id="time-dropdown">
-                        <li><label class="dropdown-item" id="morning-dropdown" for="morning-checkbox"><input
-                                    type="checkbox" checked="checked" id="morning-checkbox" class="checkbox">
-                                Morning</label></li>
-                        <li><label class="dropdown-item" id="afternoon-dropdown" for="afternoon-checkbox"><input
-                                    type="checkbox" checked="checked" id="afternoon-checkbox" class="checkbox">
-                                Afternoon</label></li>
-                        <li><label class="dropdown-item" id="evening-dropdown" for="evening-checkbox"><input
-                                    type="checkbox" checked="checked" id="evening-checkbox" class="checkbox">
-                                Evening</label></li>
-                    </ul>
-                </span>
-            </span>
-        </div>
-
-        <!--table of mondays events-->
-        <div id="monday">
-
-            <table id="monday-table">
-
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Monday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <!--event data-->
-                <tbody>
-                    <tr class="row-b swimming birmingham evening">
-                        <td><i class="fa-solid fa-person-swimming"></i>Swimming club</td>
-                        <td>Birmingham, Sandwell</td>
-                        <td>16:00</td>
-                        <td>
-                            <a target="_blank" href="https://birmingham-marlins.co.uk/calendar">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a running birmingham evening">
-                        <td><i class="fa-solid fa-person-running"></i>5 - 10 km run</td>
-                        <td>Birmingham, Chamberlain Square</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/runbrumcrew/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-b running london evening">
-                        <td><i class="fa-solid fa-person-running"></i>6 km loop</td>
-                        <td>London, Hyde Park</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/monday.afterlight.rc/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a yoga manchester evening">
-                        <td><i class="fa-solid fa-yin-yang"></i>Vinyasa Flow Yoga</td>
-                        <td>Manchester, Levenshulme</td>
-                        <td>19:15</td>
-                        <td>
-                            <a target="_blank" href="https://yogasoulmcr.co.uk/levenshulme-tt">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-
-
-
-        <!--table of tuesdays events-->
-        <div id="tuesday">
-
-            <table id="tuesday-table">
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Tuesday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <!--event data-->
-                <tbody>
-                    <tr class="row-b dancing london morning">
-                        <td><i class="fa-solid fa-music"></i>Salsa</td>
-                        <td>London, Fulham</td>
-                        <td>09:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.zumba.com/en-US/class_detail/79272332-3698-4061-981e-c67176bd0226?lat=51.5072178&lng=-0.1275862">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a dancing birmingham morning">
-                        <td><i class="fa-solid fa-music"></i>Zumba Gold</td>
-                        <td>Birmingham, Solihull</td>
-                        <td>11:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.zumba.com/en-US/class_detail/91f85ba3-1a4f-4655-8eb9-a39df66837be?lat=52.4822694&lng=-1.8900078">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-b running london evening">
-                        <td><i class="fa-solid fa-person-running"></i>Track Run</td>
-                        <td>London, Chelsea</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank" href="https://www.onetrack.club/running-club/chelsea-run-club">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a swimming birmingham evening">
-                        <td><i class="fa-solid fa-person-swimming"></i>Swimming club</td>
-                        <td>Birmingham, University of Birmingham</td>
-                        <td>19:45</td>
-                        <td><a target="_blank" href="https://birmingham-marlins.co.uk/calendar">
-                                <i class="fa-brands fa-sistrix"></i>
-                            </a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-        <!--wednesday event timetable-->
-        <div id="wednesday">
-
-            <table id="wednesday-table">
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Wednesday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <!--event data-->
-                <tbody>
-                    <tr class="row-b dancing london morning">
-                        <td><i class="fa-solid fa-music"></i> Zumba</td>
-                        <td>London, Salusbury</td>
-                        <td>09:15</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.zumba.com/en-US/class_detail/d26f9748-421f-4379-9b86-b97cf835bae6?lat=51.5072178&lng=-0.1275862">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a dancing birmingham evening">
-                        <td><i class="fa-solid fa-music"></i> Strong Nation</td>
-                        <td>Birmingham, Earlswood</td>
-                        <td>18:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.zumba.com/en-US/class_detail/index/eba26603-451e-4056-9e6d-7441c5b50455">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-b swimming birmingham evening">
-                        <td><i class="fa-solid fa-person-swimming"></i> Learn to swim</td>
-                        <td>Birmingham, Acocks Green</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank" href="https://birmingham-marlins.co.uk/calendar">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a dancing birmingham evening">
-                        <td><i class="fa-solid fa-music"></i> Aqua Zumba</td>
-                        <td>Birmingham, Sandwell</td>
-                        <td>19:45</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.zumba.com/en-US/class_detail/97bbaecb-811f-440a-b155-72e08fbbf542?lat=52.4822694&lng=-1.8900078">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-
-
-            </table>
-        </div>
-
-
-        <!--thursday event timetable-->
-        <div id="thursday">
-
-            <table id="thursday-table">
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Thursday's Events</h2>
-                        </th>
-                    </tr>
-
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    </tr>
-                    <!--event data-->
-                    <tr class="row-b">
-                        <td>5 - 10 km</td>
-                        <td>Birmingham, Chamberlain Square</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/runbrumcrew/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a">
-                        <td>6 km loop</td>
-                        <td>London, Hyde Park</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/monday.afterlight.rc/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-
-        <!--friday event timetable-->
-        <div id="friday">
-
-            <table id="friday-table">
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Friday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--event data-->
-                    <tr class="row-b">
-                        <td>5 - 10 km</td>
-                        <td>Birmingham, Chamberlain Square</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/runbrumcrew/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a">
-                        <td>6 km loop</td>
-                        <td>London, Hyde Park</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/monday.afterlight.rc/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-        <!--saturday event timetable -->
-        <div id="saturday">
-
-            <table id="saturday-table">
-                <thead>
-                    <!--table headings-->
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Saturday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <!--event data-->
-                    <tr class="row-b">
-                        <td>5 - 10 km</td>
-                        <td>Birmingham, Chamberlain Square</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/runbrumcrew/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a">
-                        <td>6 km loop</td>
-                        <td>London, Hyde Park</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/monday.afterlight.rc/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-        <!--sunday event timetable-->
-        <div id="sunday">
-
-            <table id="sunday-table">
-                <!--table headings-->
-                <thead>
-                    <tr class="day-title">
-                        <th colspan="4">
-                            <h2>Sunday's Events</h2>
-                        </th>
-                    </tr>
-                    <tr class="row-a">
-                        <th>Event Type</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Find out more</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--event data-->
-                    <tr class="row-b">
-                        <td>5 - 10 km</td>
-                        <td>Birmingham, Chamberlain Square</td>
-                        <td>18:30</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/runbrumcrew/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row-a">
-                        <td>6 km loop</td>
-                        <td>London, Hyde Park</td>
-                        <td>19:00</td>
-                        <td>
-                            <a target="_blank"
-                                href="https://www.instagram.com/monday.afterlight.rc/?utm_source=ig_web_button_share_sheet"
-                                rel="http://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-
-    </section>
-
 
 <!-- FOOTER SECTION -->
 <footer class="footer">
@@ -638,12 +69,6 @@
     <div class="footer-brand">
       <h2>Train Together | Stay Together</h2>
       <p>Across The UK 🇬🇧</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="#help">Help</a>
-      <a href="#company">Company</a>
-      <a href="#careers">Careers</a>
     </div>
 
     <div class="footer-social">
@@ -708,6 +133,146 @@
     </form>
   </div>
 </div>
+
+<!-- ABOUT POPUP -->
+<div class="about-modal-overlay" id="about-modal">
+  <div class="about-modal">
+    <button class="about-close" id="about-close">&times;</button>
+    <h2>About This Website</h2>
+
+    <p>
+      Our platform is built for people who want to push their limits, discover new activities,
+      and connect with others across the UK. Whether you're training for an event, exploring
+      new routes, or simply staying active, we’re here to support your journey.
+    </p>
+
+    <p>
+      We believe in community, progress, and making fitness accessible to everyone — from
+      beginners to seasoned athletes. Join us, explore your way, and be part of a growing
+      movement.
+    </p>
+  </div>
+</div>
+
+<!-- ABOUT POPUP -->
+<div class="about-modal-overlay" id="about-modal">
+  <div class="about-modal">
+    <button class="about-close" id="about-close">&times;</button>
+    <h2>About This Website</h2>
+
+    <p>
+      Our platform is built for people who want to push their limits, discover new activities,
+      and connect with others across the UK. Whether you're training for an event, exploring
+      new routes, or simply staying active, we’re here to support your journey.
+    </p>
+
+    <p>
+      We believe in community, progress, and making fitness accessible to everyone — from
+      beginners to seasoned athletes. Join us, explore your way, and be part of a growing
+      movement.
+    </p>
+  </div>
+</div>
+
+<!-- CONTACT POPUP -->
+<div class="contact-modal-overlay" id="contact-modal">
+  <div class="contact-modal">
+    <button class="contact-close" id="contact-close">&times;</button>
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+      <label>
+        Name
+        <input type="text" name="contactName" placeholder="Your name">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="contactEmail" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Comment
+        <textarea name="contactComment" placeholder="Your message"></textarea>
+      </label>
+
+      <button type="submit" class="contact-submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- LOGIN POPUP -->
+<div class="login-modal-overlay" id="login-modal">
+  <div class="login-modal">
+    <button class="login-close" id="login-close">&times;</button>
+    <h2>Log In</h2>
+
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="loginEmail" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="loginPassword" placeholder="Your password">
+      </label>
+
+      <button type="submit" class="login-submit">Log In</button>
+    </form>
+  </div>
+</div>
+
+<!-- LOGIN POPUP -->
+<div class="login-modal-overlay" id="login-modal">
+  <div class="login-modal">
+    <button class="login-close" id="login-close">&times;</button>
+    <h2>Log In</h2>
+
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="loginEmail" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="loginPassword" placeholder="Your password">
+      </label>
+
+      <button type="submit" class="login-submit">Log In</button>
+    </form>
+  </div>
+</div>
+
+<!-- SIGN UP POPUP -->
+<div class="signup-modal-overlay" id="signup-modal">
+  <div class="signup-modal">
+    <button class="signup-close" id="signup-close">&times;</button>
+    <h2>Create an Account</h2>
+
+    <form class="signup-form">
+      <label>
+        Full Name
+        <input type="text" name="signupName" placeholder="Your full name">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="signupEmail" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="signupPassword" placeholder="Create a password">
+      </label>
+
+      <button type="submit" class="signup-submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+
 
 <!-- JavaScript -->
 <script src="assets/JavaScript/script.js"></script>
