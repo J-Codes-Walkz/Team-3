@@ -39,7 +39,7 @@ table{border-collapse: separate; border-spacing: 1px; background-color: #ff6a00;
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url("../images/backgroundss.jpg") center/cover fixed no-repeat;
+  background: url("../images/backgroundss.webp") center/cover fixed no-repeat;
   color: var(--text-light);
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@ body {
 .hero {
   background:
     linear-gradient(120deg, rgba(26,26,29,0.7), rgba(35,38,46,0.7), rgba(10,26,47,0.7)),
-    url("../images/yogaimage.jpg") center/cover no-repeat;
+    url("../images/yogaimage.webp") center/cover no-repeat;
   min-height: 70vh;
   padding: 60px 20px;
   display: flex;
@@ -264,10 +264,10 @@ body {
 }
 
 /* Backgrounds */
-.city { background-image: url("../assets/images/city.jpg"); }
-.rural { background-image: url("../assets/images/rural.jpg"); }
-.indoor { background-image: url("../assets/images/indoor.jpg"); }
-.distance { background-image: url("../assets/images/distance.jpg"); }
+.city { background-image: url("../assets/images/city.webp"); }
+.rural { background-image: url("../assets/images/rural.webp"); }
+.indoor { background-image: url("../assets/images/indoor.webp"); }
+.distance { background-image: url("../assets/images/distance.webp"); }
 
 @keyframes slide {
   from { transform: translateX(0); }
@@ -540,19 +540,19 @@ body {
 }
 
 .city {
-    background-image: url("../images/city.jpg");
+    background-image: url("../images/city.webp");
 }
 
 .rural {
-    background-image: url("../images/rural.jpg");
+    background-image: url("../images/rural.webp");
 }
 
 .indoor {
-    background-image: url("../images/indoor.jpg");
+    background-image: url("../images/indoor.webp");
 }
 
 .distance {
-    background-image: url("../images/distance.jpg");
+    background-image: url("../images/distance.webp");
 }
 
 @keyframes slide {
