@@ -8,8 +8,24 @@
 - **Project Repository:** [https://github.com/users/J-Codes-Walkz/projects/4]
 
 ---
+## Contents
 
-## Overview
+- [Project Overview](#project-overview)
+- [Wireframe](#wireframe)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [User Stories](#user-stories)
+- [Team](#team)
+- [Team Contributions](#team-contributions)
+- [Testing](#testing)
+- [Screen Testing](#screen-testing)
+- [Deployment](#deployment)
+- [Future Features](#future-features)
+- [Credits](#credits)
+- [AI Usage Documentation](#ai-usage-documentation)
+
+
+## Project Overview
 
 Our project is a one-page interactive fitness and activity website designed to help users discover activities and events across the UK.
 
@@ -29,6 +45,19 @@ Users can:
 
 
 ## Features
+
+| **Feature** | **HTML5** | **CSS3** | **JavaScript** | **Bootstrap** | **Other** |
+| --- | --- | --- | --- | --- | --- |
+| Hero/Header | ✔ | ✔ | ✖ | ✔ | Google Fonts |
+| Activity Carousel | ✔ | ✔ | ✔ | ✖ | Unsplash Images |
+| Events Timetable | ✔ | ✔ | ✔ | ✔ | Font Awesome |
+| Event Filters | ✔ | ✖ | ✔ | ✖ | — |
+| Join Modal | ✔ | ✔ | ✔ | ✖ | — |
+| About Modal | ✔ | ✔ | ✔ | ✖ | — |
+| Contact Modal | ✔ | ✔ | ✔ | ✖ | — |
+| Login/Signup Modals | ✔ | ✔ | ✔ | ✖ | — |
+| Responsive Layout | ✔ | ✔ | ✖ | ✔ | — |
+| Footer Social Links | ✔ | ✔ | ✖ | ✖ | Font Awesome |
 
 ### Header/Hero Section
 - Navigation to different sections of the website
@@ -60,12 +89,17 @@ Users can:
 ---
 
 ## Tech Stack
-
-- **HTML5** - Structure and semantics
-- **CSS3** - Layout, styling, animations and responsive design
-- **JavaScript (ES6+)** - DOM manipulation, filtering and interactivity
-- **Bootstrap** - Responsive components and styling
-- **Font Awesome** - Icons
+| **Technology** | **Purpose / Usage** | **Category** |
+| --- | --- | --- |
+| **[HTML5](ca://s?q=Explain_HTML5_usage)** | Structure, semantic layout, content organisation | Front‑End |
+| **[CSS3](ca://s?q=Explain_CSS3_usage)** | Styling, gradients, layout, responsive design | Front‑End |
+| **[JavaScript ES6+](ca://s?q=Explain_JavaScript_usage)** | DOM manipulation, event filtering, modal logic | Front‑End Logic |
+| **[Bootstrap 5](ca://s?q=Explain_Bootstrap_usage)** | Responsive grid, layout utilities | Framework |
+| **[Font Awesome](ca://s?q=Explain_Font_Awesome_usage)** | Icons for UI and social links | UI Assets |
+| **[Google Fonts](ca://s?q=Explain_Google_Fonts_usage)** | Typography (Poppins, Montserrat) | Design |
+| **[GitHub Pages](ca://s?q=Explain_GitHub_Pages_usage)** | Live deployment hosting | Hosting |
+| **[GitHub Projects](ca://s?q=Explain_GitHub_Projects_usage)** | Task management, workflow organisation | Collaboration |
+| **[Unsplash](ca://s?q=Explain_Unsplash_usage)** | High‑quality images for carousel & hero | Media Assets |
 
 ---
 
@@ -82,10 +116,11 @@ User Stories (for LO1 & LO6)
 
 ## Team
 
-**Team 3:**
-- Jamie
-- Evan
-- Jasmeen
+| **Team Member** | **Responsibilities** | **Key Contributions** |
+| --- | --- | --- |
+| **Jamie** | Front‑end structure, styling, modals | Hero/Header/Footer, modal system, colour palette, gradients, background images, social links, overall UI polish |
+| **Jasmeen** | Carousel development | Activity carousel, animations, hover effects, responsive behaviour |
+| **Evan** | Events system & filtering | Timetable, filters, JS logic, dynamic ordering, dropdown behaviour, favicon, reset filters |
 
 ---
 ## Team Contributions
@@ -132,7 +167,7 @@ Successful Local Deployment through Github Pages.
 ### Individual testing - Jamie 
 - HTML: Pass
 - CSS: Pass
-- JavaScript: 2 Errors initially, now fixe.
+- JavaScript: 2 Errors initially, now fixed.
 - Screenshots are within the Repo Files 
 
 ### Individual testing - Jasmeen
@@ -149,6 +184,11 @@ Successful Local Deployment through Github Pages.
 
 
 ### Individual testing - Evan
+
+
+## Screen Testing 
+<img width="1180" height="672" alt="Screenshot 2026-09-15 at 18 13 06" src="https://github.com/user-attachments/assets/0487628a-1371-458a-bad7-452eabf37cc7" />
+
 
 ---
 
@@ -211,3 +251,10 @@ AI assisted with:
 - Git and GitHub guidance
 
 All AI-generated suggestions were reviewed, tested and modified by the team before being included in the project.
+
+## Special Thanks 
+Evan: https://github.com/EvanMuat
+Jasmeen: https://github.com/Jasmeen-13
+
+<img width="570" height="319" alt="image" src="https://github.com/user-attachments/assets/2c546d29-88c4-4c42-856b-bac6f960a940" />
+
